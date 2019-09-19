@@ -1,0 +1,90 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "items": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "kode": {
+            "type": "string"
+          },
+          "tittel": {
+            "type": "object",
+            "properties": {
+              "nb": {
+                "type": "string"
+              },
+              "en": {
+                "type": "string"
+              }
+            }
+          },
+          "ingress": {
+            "type": "object",
+            "properties": {
+              "nb": {
+                "type": "string"
+              }
+            }
+          },
+          "farge": {
+            "type": "string"
+          },
+          "kodeautor": {
+            "type": "string"
+          },
+          "lenke": {
+            "type": "object",
+            "properties": {
+              "lovdata": {
+                "type": "string"
+              }
+            }
+          },
+          "nivå": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "kode",
+          "tittel",
+          "ingress",
+          "farge",
+          "nivå",
+          "lenke",
+          "kodeautor"
+        ]
+      }
+    },
+    "meta": {
+      "type": "object",
+      "properties": {
+        "tittel": {
+          "type": "string"
+        },
+        "produsertUtc": {
+          "type": "string"
+        },
+        "utgiver": {
+          "type": "string"
+        },
+        "url": {
+          "type": "null"
+        },
+        "tool": {
+          "type": "object",
+          "properties": {
+            "name": {
+              "type": "string"
+            }
+          }
+        },
+        "elementer": {
+          "type": "number"
+        }
+      }
+    }
+  }
+}
